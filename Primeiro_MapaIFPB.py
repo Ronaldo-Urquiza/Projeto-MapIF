@@ -27,7 +27,7 @@ folium.TileLayer(
                 name='Modo Claro').add_to(MapaIFPBCG)
 
 
-folium.LayerControl().add_to(MapaIFPBCG)
+folium.LayerControl().add_t3o(MapaIFPBCG)
 #Fim da geração básica do mapa
 
 #Começo das escolhas do Usuário
