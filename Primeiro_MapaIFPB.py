@@ -27,7 +27,7 @@ folium.TileLayer(
                 name='Modo Claro').add_to(MapaIFPBCG)
 
 
-folium.LayerControl().add_t3o(MapaIFPBCG)
+folium.LayerControl().add_to(MapaIFPBCG)
 #Fim da geração básica do mapa
 
 #Começo das escolhas do Usuário
@@ -747,7 +747,6 @@ if UsuarioDestinoInicial == 2:
     if UsuarioDestinoFinal == 4: #Rota para o Laboratório de programação 4
         coordenadasProg4 =[
             [-7.239359 ,-35.915816],
-            [-7.2389708, -35.9159750],
             [-7.2390852, -35.9159267],
             [-7.239093, -35.915943]]  
        
@@ -826,7 +825,7 @@ if UsuarioDestinoInicial == 2:
                 color = 'green',
                 popup = 'Vivência -> Laboratório de Informática 1').add_to(MapaIFPBCG)
                 
-    if UsuarioDestinoFinal == 7: #Rota para a Bibliooteca
+    if UsuarioDestinoFinal == 7: #Rota para a Biblioteca
         coordenadasBiblioteca =[
             [-7.239359 ,-35.915816],
             [-7.2396307,-35.9156907],
@@ -846,7 +845,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.2403203880177225, -35.915812759962705], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-book",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -876,7 +875,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.240091568821912, -35.91515968238606], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-pencil",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -907,7 +906,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.24003920, -35.91615240], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-phone-alt",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -938,9 +937,9 @@ if UsuarioDestinoInicial == 2:
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
 
-        folium.Marker(location = [-7.24003920, -35.91615240], 
+        folium.Marker(location = [-7.239814492338399, -35.91607441989644], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-heart-empty",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -968,7 +967,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.239766150 , -35.915958126], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-briefcase",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -995,7 +994,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.239641 ,-35.915714], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-flash",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -1022,7 +1021,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.239677, -35.915932], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-wrench",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -1052,7 +1051,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.23973760, -35.91519720], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-cutlery",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -1078,7 +1077,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.239174, -35.916214], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-eye-open",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -1111,7 +1110,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.240157, -35.916602], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-home",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -1140,7 +1139,7 @@ if UsuarioDestinoInicial == 2:
 
         folium.Marker(location = [-7.240207, -35.915415], 
             popup = "Final", 
-            icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+            icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
                                 color = "darkred",
                                 icon_color = "white",
                                 prefix = "glyphicon")).add_to(MapaIFPBCG)
@@ -1732,4 +1731,4 @@ if UsuarioDestinoInicial == 3:
 
 
 MapaIFPBCG #Gera o mapa
- #%%
+# %%
