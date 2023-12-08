@@ -660,10 +660,245 @@ if UsuarioDestinoInicial == 1:
 if UsuarioDestinoInicial == 2: #
 
     UsuarioDestinoFinal = int(input("\n\nOk, entendi! Agora me diz para onde você vai: \n'1' para Laboratório de programação 1\n'2' para Laboratório de programação 2\n'3' para Laboratório de programação 3\n'4' para Laboratório de programação 4\n'5' para Laboratório de programação 5\n'6' para Laboratório de Informática 1\n'7' para Biblioteca\n'8' para Sala 09\n'9' para Recepção\n'10' para Gabinete Médico\n'11' para Ramo Estudantil\n'12' para Laboratório de Eletrônica Analógica\n'13' para Laboratório de Eletrônica Digital\n'14' para Refeitório\n'15' para Auditório\n'16' para Bloco de Aulas\n'17' para Portaria\n\nDigite para onde você quer ir: ")) #Menu para o usuário digitar onde ele quer ir
+    
+    if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 1
+       coordenadasProg1 =[
+            [-7.239359 ,-35.915816]
+            [-7.239193,-35.915882]
+            [-7.2391890, -35.9158757]
+       ]  
+            folium.Marker(location = [-7.239359 ,-35.915816], 
+                popup = "Início", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            folium.Marker(location = [-7.2391890, -35.9158757], 
+                popup = "Final", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            for i in range(len(coordenadasProg1)-1): #-1 pq no ultimo nao vai ter i+1
+                ponto_inicial = coordenadasProg1[i]
+                ponto_final = coordenadasProg1[i+1]
+                folium.PolyLine(locations = [ponto_inicial,ponto_final],
+                    color = 'green',
+                    popup = 'Rota: Vivência -> Laboratório de Programação 1').add_to(MapaIFPBCG)
+
+     if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 2
+       coordenadasProg2 =[
+            [-7.239359 ,-35.915816]
+            [-7.239193,-35.915882]
+            [-7.2390852, -35.9159267]
+            [-7.2390772, -35.9159133]
+       ]  
+            folium.Marker(location = [-7.239359 ,-35.915816], 
+                popup = "Início", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            folium.Marker(location = [-7.2390772, -35.9159133], 
+                popup = "Final", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            for i in range(len(coordenadasProg1)-1): #-1 pq no ultimo nao vai ter i+1
+                ponto_inicial = coordenadasProg1[i]
+                ponto_final = coordenadasProg1[i+1]
+                folium.PolyLine(locations = [ponto_inicial,ponto_final],
+                    color = 'green',
+                    popup = 'Vivência -> Laboratório de Programação 2').add_to(MapaIFPBCG)
+                
+     if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 3 
+       coordenadasProg3 =[
+            [-7.239359 ,-35.915816]
+            [-7.239193,-35.915882]
+            [-7.2390852, -35.9159267]
+            [-7.2389708, -35.9159750]
+            [-7.2389602, -35.9159562]
+       ]  
+            folium.Marker(location = [-7.239359 ,-35.915816], 
+                popup = "Início", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            folium.Marker(location = [-7.2389602, -35.9159562], 
+                popup = "Final", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            for i in range(len(coordenadasProg1)-1): #-1 pq no ultimo nao vai ter i+1
+                ponto_inicial = coordenadasProg1[i]
+                ponto_final = coordenadasProg1[i+1]
+                folium.PolyLine(locations = [ponto_inicial,ponto_final],
+                    color = 'green',
+                    popup = 'Vivência -> Laboratório de Programação 3').add_to(MapaIFPBCG)
+                
+    if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 4
+       coordenadasProg3 =[
+            [-7.239359 ,-35.915816]
+            [-7.2389708, -35.9159750]
+            [-7.2390852, -35.9159267]
+            [-7.239093, -35.915943]
+       ]  
+            folium.Marker(location = [-7.239359 ,-35.915816], 
+                popup = "Início", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            folium.Marker(location = [-7.239093, -35.915943], 
+                popup = "Final", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            for i in range(len(coordenadasProg1)-1): #-1 pq no ultimo nao vai ter i+1
+                ponto_inicial = coordenadasProg1[i]
+                ponto_final = coordenadasProg1[i+1]
+                folium.PolyLine(locations = [ponto_inicial,ponto_final],
+                    color = 'green',
+                    popup = 'Vivência -> Laboratório de Programação 4').add_to(MapaIFPBCG)
+                
+    if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 5
+       coordenadasProg3 =[
+            [-7.239359 ,-35.915816]
+            [-7.239038, -35.915697]
+            [-7.239049, -35.915676]
+       ]  
+            folium.Marker(location = [-7.239359 ,-35.915816], 
+                popup = "Início", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            folium.Marker(location = [-7.239049, -35.915676], 
+                popup = "Final", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            for i in range(len(coordenadasProg1)-1): #-1 pq no ultimo nao vai ter i+1
+                ponto_inicial = coordenadasProg1[i]
+                ponto_final = coordenadasProg1[i+1]
+                folium.PolyLine(locations = [ponto_inicial,ponto_final],
+                    color = 'green',
+                    popup = 'Vivência -> Laboratório de Programação 5').add_to(MapaIFPBCG)
+    
+
+    if UsuarioDestinoFinal == 1: #Rota para o Laboratório de informática 
+       coordenadasLabinfo1 =[
+            [-7.239359 ,-35.915816]
+            [-7.2396653,-35.9159508]
+            [--7.239656, -35.915967]
+       ]  
+            folium.Marker(location = [-7.239359 ,-35.915816], 
+                popup = "Início", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            folium.Marker(location = [-7.239656, -35.915967], 
+                popup = "Final", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            for i in range(len(coordenadasProg1)-1): #-1 pq no ultimo nao vai ter i+1
+                ponto_inicial = coordenadasProg1[i]
+                ponto_final = coordenadasProg1[i+1]
+                folium.PolyLine(locations = [ponto_inicial,ponto_final],
+                    color = 'green',
+                    popup = 'Vivência -> Laboratório de Informática 1').add_to(MapaIFPBCG)
+                
+    if UsuarioDestinoFinal == 1: #Rota para a Bibliooteca
+       coordenadasLabinfo1 =[
+            [-7.239359 ,-35.915816]
+            [-7.2396307,-35.9156907]
+            [-7.239914844385245, -35.91557318434195 ]
+            [-7.2401230,-35.9154600 ]
+            [-7.240207, -35.915415]
+            [-7.240326, -35.915702]
+            [-7.24028048721991,  -35.91572294625111]
+            [-7.2403203880177225, -35.915812759962705]
+
+       ]  
+            folium.Marker(location = [-7.239359 ,-35.915816], 
+                popup = "Início", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            folium.Marker(location = [-7.2403203880177225, -35.915812759962705], 
+                popup = "Final", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            for i in range(len(coordenadasProg1)-1): #-1 pq no ultimo nao vai ter i+1
+                ponto_inicial = coordenadasProg1[i]
+                ponto_final = coordenadasProg1[i+1]
+                folium.PolyLine(locations = [ponto_inicial,ponto_final],
+                    color = 'green',
+                    popup = 'Vivência -> Biblioteca').add_to(MapaIFPBCG)
+    
+
+    if UsuarioDestinoFinal == 1: #Rota para a sala 09
+       coordenadasLabinfo1 =[
+            [-7.239359 ,-35.915816]
+            [-7.2396307,-35.9156907]
+            [-7.239914844385245, -35.91557318434195 ]
+            [-7.2401230,-35.9154600 ]
+            [-7.240207, -35.915415]
+            [-7.240326, -35.915702]
+            [-7.24028048721991,  -35.91572294625111]
+            [-7.2403203880177225, -35.915812759962705]
+
+       ]  
+            folium.Marker(location = [-7.239359 ,-35.915816], 
+                popup = "Início", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-tasks",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            folium.Marker(location = [-7.2403203880177225, -35.915812759962705], 
+                popup = "Final", 
+                icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
+                                    color = "darkred",
+                                    icon_color = "white",
+                                    prefix = "glyphicon")).add_to(MapaIFPBCG)
+
+            for i in range(len(coordenadasProg1)-1): #-1 pq no ultimo nao vai ter i+1
+                ponto_inicial = coordenadasProg1[i]
+                ponto_final = coordenadasProg1[i+1]
+                folium.PolyLine(locations = [ponto_inicial,ponto_final],
+                    color = 'green',
+                    popup = 'Vivência -> Laboratório de Informática 1').add_to(MapaIFPBCG)
+                
 
 
 #Bloco de aulas para algum destino, Responsável: Mariane Oliveira.
-if UsuarioDestinoInicial == 3: 
+ if UsuarioDestinoInicial == 3: 
     
     UsuarioDestinoFinal = int(input("\n\nOk, entendi! Agora me diz para onde você vai: \n'1' para Laboratório de programação 1\n'2' para Laboratório de programação 2\n'3' para Laboratório de programação 3\n'4' para Laboratório de programação 4\n'5' para Laboratório de programação 5\n'6' para Laboratório de Informática 1\n'7' para Biblioteca\n'8' para Sala 09\n'9' para Recepção\n'10' para Gabinete Médico\n'11' para Ramo Estudantil\n'12' para Laboratório de Eletrônica Analógica\n'13' para Laboratório de Eletrônica Digital\n'14' para Refeitório\n'15' para Auditório\n'16' para Portaria\n'17' para Vivência\n\nDigite para onde você quer ir: ")) #Menu para o usuário digitar onde ele quer ir
 
