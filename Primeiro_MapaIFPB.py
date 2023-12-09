@@ -8,7 +8,11 @@ from folium.plugins import MousePosition
 MapaIFPBCG = folium.Map(location = [-7.2397041,-35.9157529], 
                         zoom_start = 18, 
                         control_scale = True,
-                        tiles= None)
+                        tiles= None) 
+# criação da caixa de busca
+Geocoder(collapsed=True,position= "topleft",add_marker=True).add_to(MapaIFPBCG)
+
+
 
 folium.TileLayer(
 		        tiles= 'https://{s}.tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token={acesstoken}',
