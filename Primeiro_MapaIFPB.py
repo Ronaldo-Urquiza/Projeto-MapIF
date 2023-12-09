@@ -688,7 +688,7 @@ if UsuarioDestinoInicial == 2: #
                     color = 'green',
                     popup = 'Rota: Vivência -> Laboratório de Programação 1').add_to(MapaIFPBCG)
 
-     if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 2
+    if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 2
        coordenadasProg2 =[
             [-7.239359 ,-35.915816]
             [-7.239193,-35.915882]
@@ -716,7 +716,7 @@ if UsuarioDestinoInicial == 2: #
                     color = 'green',
                     popup = 'Vivência -> Laboratório de Programação 2').add_to(MapaIFPBCG)
                 
-     if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 3 
+    if UsuarioDestinoFinal == 1: #Rota para o Laboratório de programação 3 
        coordenadasProg3 =[
             [-7.239359 ,-35.915816]
             [-7.239193,-35.915882]
@@ -759,14 +759,14 @@ if UsuarioDestinoInicial == 2: #
                                     icon_color = "white",
                                     prefix = "glyphicon")).add_to(MapaIFPBCG)
 
-            folium.Marker(location = [-7.239093, -35.915943], 
+             folium.Marker(location = [-7.239093, -35.915943], 
                 popup = "Final", 
                 icon = folium.Icon(icon = "glyphicon glyphicon-hdd",
                                     color = "darkred",
                                     icon_color = "white",
                                     prefix = "glyphicon")).add_to(MapaIFPBCG)
 
-            for i in range(len(coordenadasProg4)-1): #-1 pq no ultimo nao vai ter i+1
+             for i in range(len(coordenadasProg4)-1): #-1 pq no ultimo nao vai ter i+1
                 ponto_inicial = coordenadasProg4[i]
                 ponto_final = coordenadasProg4[i+1]
                 folium.PolyLine(locations = [ponto_inicial,ponto_final],
@@ -992,7 +992,7 @@ if UsuarioDestinoInicial == 2: #
                     popup = 'Vivência -> Ramo Estudantil').add_to(MapaIFPBCG)
      
 
-     if UsuarioDestinoFinal == 1: #laboratório Eletrônica Analógica
+    if UsuarioDestinoFinal == 1: #laboratório Eletrônica Analógica
        coordenadasLabEA =[
             [-7.239359 ,-35.915816]
             [-7.2396307, -35.9156907]
@@ -1081,7 +1081,7 @@ if UsuarioDestinoInicial == 2: #
                     popup = 'Vivência -> Refeitorio').add_to(MapaIFPBCG)   
 
 
-     if UsuarioDestinoFinal == 1: #Auditorio
+    if UsuarioDestinoFinal == 1: #Auditorio
        coordenadasAuditorio =[
             [-7.239359 ,-35.915816]
             [-7.239174, -35.916214]
@@ -1176,7 +1176,7 @@ if UsuarioDestinoInicial == 2: #
                     color = 'green',
                     popup = 'Vivência -> Bloco de aulas').add_to(MapaIFPBCG) 
                 
-                
+
 
 
 
@@ -1186,7 +1186,7 @@ if UsuarioDestinoInicial == 2: #
 
 
 #Bloco de aulas para algum destino, Responsável: Mariane Oliveira.
- if UsuarioDestinoInicial == 3: 
+if UsuarioDestinoInicial == 3: 
     
     UsuarioDestinoFinal = int(input("\n\nOk, entendi! Agora me diz para onde você vai: \n'1' para Laboratório de programação 1\n'2' para Laboratório de programação 2\n'3' para Laboratório de programação 3\n'4' para Laboratório de programação 4\n'5' para Laboratório de programação 5\n'6' para Laboratório de Informática 1\n'7' para Biblioteca\n'8' para Sala 09\n'9' para Recepção\n'10' para Gabinete Médico\n'11' para Ramo Estudantil\n'12' para Laboratório de Eletrônica Analógica\n'13' para Laboratório de Eletrônica Digital\n'14' para Refeitório\n'15' para Auditório\n'16' para Portaria\n'17' para Vivência\n\nDigite para onde você quer ir: ")) #Menu para o usuário digitar onde ele quer ir
 
