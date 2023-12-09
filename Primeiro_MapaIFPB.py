@@ -5,7 +5,6 @@ from folium.plugins import Draw
 from folium.plugins import MousePosition
 from folium.plugins import FloatImage #FEATURE: rosa dos ventos
 import base64 #FEATURE: rosa dos ventos
-import branca #FEATURE: legenda
 
 #Ínício da geração básica do mapa
 MapaIFPBCG = folium.Map(location = [-7.2397041,-35.9157529], 
@@ -1829,49 +1828,6 @@ with open(rosa_dos_ventos, 'rb') as rosaventos: #salvando como binário
     string_imagem = base64.b64encode(rosaventos.read()).decode("utf-8") #decodificando formato da imagem
 #Adicionando a imagem em formato de string ao mapa, afinal tudo é em HTML
 FloatImage("data:image/png; base64, {}".format(string_imagem), bottom = 12,left=1).add_to(MapaIFPBCG)
-#Fim das rosa dos ventos
-
-#Adicionando legenda ao mapa
-legenda_mapa = """
-{% macro html(this,kwargs) %} 
-
-<div style = "position: fixed; 
-bottom: 30px;
-left: 600px;
-width: 100px;
-height: 50px;
-font-size: 10px; 
-z-index: 9999; 
-">
-<p><a style = "color: black; margin-left: 0px;"> </a><b>Legenda:</b></p>
-
-<a style = "color:#078C03; margin-left: 5px;">&FilledSmallSquare;
-</a> Rota desejada
-
-<p><a style = "color:#9F3337; margin-left: 5px;">&FilledSmallSquare;
-</a> Marcadores</p>
-</div>
-
-<div style = "position: fixed; 
-bottom: 25px;
-left: 595px;
-width: 110px;
-height: 60px;
-font-size: 14px; 
-background-color: white;
-z-index: 9998; 
-opacity: 0.7;
-border: 2px solid grey;
-">
-</div>
-
-{% endmacro %} 
-"""
-
-legenda = branca.element.MacroElement()
-legenda._template = branca.element.Template(legenda_mapa)
-MapaIFPBCG.add_child(legenda) #integra legenda ao mapa
-#Fim da legenda no mapa
 
 MapaIFPBCG #Gera o mapa
 #%%
