@@ -5,7 +5,8 @@ Ok, entendi! Agora me diz para onde você vai:
 '4' para Laboratório de programação 4
 '5' para Laboratório de programação 5
 '6' para Laboratório de Informática 1
-'7' para Biblioteca\n'8' para Sala 09
+'7' para Biblioteca
+'8' para Sala 09
 '9' para Recepção
 '10' para Gabinete Médico
 '11' para Ramo Estudantil

@@ -6,11 +6,11 @@ from folium.plugins import MousePosition
 from folium.plugins import FloatImage #FEATURE: rosa dos ventos
 import base64 #FEATURE: rosa dos ventos
 import branca #FEATURE: legenda
-from folium.plugins import Geocoder
+from folium.plugins import Geocoder #FEATURE: caixa de busca
 
 #Importando arquivos txt
 doc = open( #Lendo arquivo txt para o input de destino final
-            "C:\\Users\\ronal\\MapIF\\Projeto-MapIF\\txtmaior.txt",
+            'txtmaior.txt',
             encoding="utf-8",
             mode="r",
         )
@@ -19,7 +19,7 @@ rotas = doc.read()
 doc.close()
 
 doc = open( #Lendo o arquivo html para aplicação da feature legenda
-            "C:\\Users\\ronal\\MapIF\\Projeto-MapIF\\legenda.txt",
+            'legenda.txt',
             encoding="utf-8",
             mode="r",
         )
@@ -1847,7 +1847,7 @@ while True:
     break
     
 #Adicionado rosa dos ventos ao mapa
-rosa_dos_ventos = "rosa.png" #arquivo
+rosa_dos_ventos = 'rosa.png' #arquivo
 with open(rosa_dos_ventos, 'rb') as rosaventos: #salvando como binário
     string_imagem = base64.b64encode(rosaventos.read()).decode("utf-8") #decodificando formato da imagem
 #Adicionando a imagem em formato de string ao mapa, afinal tudo é em HTML
@@ -1856,11 +1856,10 @@ FloatImage("data:image/png; base64, {}".format(string_imagem), bottom = 12,left=
 
 #Adicionando legenda ao mapa
 legenda_mapa = f"""{legenda}"""
-
 legenda = branca.element.MacroElement()
 legenda._template = branca.element.Template(legenda_mapa)
 MapaIFPBCG.add_child(legenda) #integra legenda ao mapa
 #Fim da legenda no mapa
 
 MapaIFPBCG #Gera o mapa
-#%%
+#%%2
